@@ -8,57 +8,97 @@
     --md: 16px;
     --lg: 18px;
 }
+/*Fuentes*/
+.fuente-clara {color: #eeeeee;}
+.fuente-oscura {color: #22211f;}
+.fuente-acento {color: #b59a61;}
+
+
+/*Paso 11*/
 * {
-    background-color:#98af33;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
 body{
-    
+    background-color: #128C7E;
     width: 100%;
-    height: auto;
-    font-family: phudu;
+    height: 100%;
+
+/* Encabezado*/  
+
 }
 header{
+    background-color: #98af33;
+    width: 100%;
+    font-style: arial;
     font-style: var(--black);
+    margin: 3px 2px 2px 1px;
+}
+header h1 {
+    padding: 30px;
+}
+header .menu {
+    padding: 0px 0px 5px 10px;
+}
+/*Principal*/
+
+#seccion-principal {
+    background-color:var(--hospital-green);
+    width: 100%;
     font-weight: bold;
 }
-div {
+#seccion-principal h2 {
+    padding: 5px 0px 5px 10px;
+}
+#seccion-principal p {
+    padding: 0px 0px 20px 10px;
+    font-family: cursive;
+}
+.fotos {
+    padding-bottom: 10px;
+    padding-left: 10px;
     display: flexbox;
     flex-direction: column;
-    margin: 50px 0 50px;
+    margin:0;
 }
-.fotos img {
+#seccion-principal .fotos img {
     width: 250px;
     height: 250px;
     border-radius: 20px;
     object-fit: cover;
+    
 }
-main {
-    font-weight: bold;
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #bdd1d3;
+    width: 100%;
+}
+footer h3 {
+    padding: 10px 0px 10px 10px;
 }
 .botones button {
-    background-color: var(--hospital-green);
+      background-color: white;
       border-radius: 8px;
       border: none;
-      width: 10%;
+      width: 20%;
       color: var(--black);
       cursor: pointer;
       font-size: var(--md);
       font-weight: bold;
       height: 30px;
 }
-.whatsapp-icon {
-    display: inline-block;
-    background-color: #25D366; /* Color de fondo de WhatsApp */
-    color: white;
-    font-size: 24px;
-    width: 100%;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    text-decoration: none;
+.botones button:active {
+    background-color: red;
 }
-
-.whatsapp-icon:hover {
-    background-color: #128C7E; /* Color de fondo al pasar el mouse */
+footer a .fab fa-whatsapp{
+    padding: 100px 10px 10px 10px;
+}
+footer div {
+    padding-top: 20px;
 }
